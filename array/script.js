@@ -24,8 +24,3 @@ let [, secondary, tereray] = categories; // secondary =
 
 const [i, , [j, k]] = [1, 2, [3, 4]]; //skiping 1 index
 console.log(i, j, k);
-
-// destructuring with default values
-
-const [p = 1, q = 1, r = 1] = [8, 9];
-console.log(p, q, r); // p=8,q=9,r= 1; if we not pass deafult values then r = undefined
