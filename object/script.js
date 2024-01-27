@@ -37,3 +37,11 @@ let obj = { a: 5, b: 10, c: 15 };
 
 ({ a, b } = obj);
 console.log(a, b);
+
+// nested object destructuring
+
+const {
+  address: { pinCode: zipCode, dist: Dist, country: meraDesh = "india" },
+} = personX;
+
+console.log(zipCode, Dist, meraDesh);
