@@ -14,3 +14,8 @@ const personX = {
 const { name, secondName } = personX;
 
 console.log(name, secondName);
+
+// rename properties during destructuring
+const { name: canditateName, secondName: lastName } = personX;
+
+console.log(canditateName, lastName);
