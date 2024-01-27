@@ -29,3 +29,11 @@ const {
 } = personX;
 
 console.log(studentName, title, studentAge);
+
+let a = 111;
+let b = 512;
+let c = 814;
+let obj = { a: 5, b: 10, c: 15 };
+
+({ a, b } = obj);
+console.log(a, b);
