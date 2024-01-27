@@ -10,6 +10,12 @@ console.log(a, b, c);
 const categories = ["pizza", "chinese", "Turkish", "Italian", "Arbian"];
 const [first, second] = categories; // taking first two value from categories array
 // we can leave a hole with space and comma
-const [, secondary, tereray] = categories; // secondary =
-console.log(secondary, tereray);
-console.log(first, second);
+let [, secondary, tereray] = categories; // secondary =
+// swaping
+// let temp = secondary;
+// secondary = tereray;
+// tereray = temp;
+
+// swapping using destructuring
+
+[secondary, tereray] = [tereray, secondary];
