@@ -19,3 +19,8 @@ let [, secondary, tereray] = categories; // secondary =
 // swapping using destructuring
 
 [secondary, tereray] = [tereray, secondary];
+
+// nested Destructuring;
+
+const [i, , [j, k]] = [1, 2, [3, 4]]; //skiping 1 index
+console.log(i, j, k);
