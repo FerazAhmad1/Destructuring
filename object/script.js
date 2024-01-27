@@ -19,3 +19,13 @@ console.log(name, secondName);
 const { name: canditateName, secondName: lastName } = personX;
 
 console.log(canditateName, lastName);
+
+// object destructuring with default value;
+
+const {
+  name: studentName = [],
+  secondName: title = [],
+  age: studentAge = [],
+} = personX;
+
+console.log(studentName, title, studentAge);
